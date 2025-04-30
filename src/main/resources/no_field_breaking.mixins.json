@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.nfb.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"FarmlandBlockMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "unbreakable_farmland",
+	"version": "${version}",
+	"name": "Unbreakable Farmlands",
+	"description": "Makes farmland completely jumpproof! Prevents crops from being trampled when players or mobs jump on fields.",
+	"authors": [
+		"Tironimo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/no_field_breaking/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nfb.No_field_Breaking"
+		],
+		"client": [
+			"com.nfb.No_field_BreakingClient"
+		]
+	},
+	"mixins": [
+		"no_field_breaking.mixins.json",
+		{
+			"config": "no_field_breaking.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
